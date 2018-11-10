@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       input: ""
     }
-    
+  
   }
 
   addInput = val => {
@@ -24,8 +24,15 @@ class App extends Component {
     this.setState({input: math.eval(this.state.input) });
   }
 
+  
+  
+
   render() {
+  
     return (
+
+
+
       <div className="App">
         <div className="calc-wrapper" >
         <Input input={this.state.input} />
